@@ -1,5 +1,5 @@
 function FindProxyForURL(url, host) {
- 
+    alert("IPs del cliente: " + myIpAddressEx());
     var resolved_ip = dnsResolve(host);
     if (url.substring(0,4) == "ftp:")
     { return "DIRECT"; } 
